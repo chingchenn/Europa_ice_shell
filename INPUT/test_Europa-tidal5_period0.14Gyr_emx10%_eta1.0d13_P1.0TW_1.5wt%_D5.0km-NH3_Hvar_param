@@ -1,0 +1,32 @@
+1561.0                      ! Total radius in km (Pluto=1188; Europa=1561; Charon=607)
+3013.0                      ! Average density in kg/m^3 (Pluto=1854; Europa=3013; Charon=1650)
+100.0                       ! Surface temperature in K (Pluto=40; Europa=100; Charon=40)
+1.31                        ! Surface gravity acceleration in m/s^2 (Pluto=0.62; Europa=1.31; Charon=0.28)
+1400.0                      ! Core radius in km (Pluto=870; Europa=1400; Charon=400)
+3300.0                      ! Core density in kg/m^3 (for silicate core: 3000 to 3500 )
+1.0d-6                      ! Core thermal diffusivity in m^2/s (for silicates: 6e-7 to 1e-6)
+1200.0                      ! Core heat capacity in J/kg/K (for silicates: 1000 to 1200)
+1                           ! Chondritic model for initial radiogenic concentration: (1) Lodders (2003); (2) CI; (3) CM; (4) LL
+1.0d13                        ! Reference vistosity in Pas min, max, and number of points (10e2 - 10e15)
+60.0                        ! Activation energy of ice in kJ/mol (30 to 90)
+2                           ! Scaling laws for temperature and heat flux: (1) isoviscous fluid; (2) stagnant-lid
+.false.                     ! Temperature-dependent thermal conductivity (.false./.true.)
+3                           ! Reference conductivity (if constant conductivity): surface=1, interior=2, manual=3
+2.6                         ! Reference conductivity in W/m/K (if manual input): usually in the range 2.0-3.0
+2                           ! Scaling laws for which geometry: (1) 3D-Cartesian ; (2) Spherical
+2                           ! Keep internal heating rate (1) or total power (2) costant constant with ice shell thickness
+1.0                        ! Internal heating rate (W/kg) (if previous = 1) or Total power (TW) (if previous = 2) min, max, and number of points
+1.0,0.0                     ! Fraction of tidal heating within ice ;layer and within core (sum shoulfd be 1.0)
+5                           ! Tidal heating time-dependence (1 = constant; 2 = sinusoidal; 3 = sinusoidal + exponential decrease; 4 = Q ~ e^2; 5 = Q ~ e^2 + exponential decrease)
+0.14d0,0.0d-11              ! Period for tidal heating time-variation in Gyr, regular decay constant (e.g., 5x10^-11 for a 20 % reduction)
+0.9d0,1.1d0                 ! Eccentricity min and max (relative to current eccentricity)
+1.5                        ! Initial amount of amonia in the ocean in vol %
+0.0d0                       ! Initial amount of methanol in the ocean in vol %
+501                         ! Number of point in iceI layer + ocean (max = 2001)
+5.0d0                         ! Initial ice layer thickness in km
+0.01d9,4.55d9,2001          ! Starting and final time in yr, number of time-step
+1                           ! Timescale: (1) Linear; (2) Logarithmic
+31                          ! Number of output frames for T-profile (max = 51)
+2                           ! Core heat flux: (1) From Kirk and Stevenson (1987); (2) Solving heat diffusion equation
+2                           ! Integration method: (1) 4th order Runge-Kutta; (2) Adaptative Runge-Kutta (3) Bulirsh-Stoer
+Europa-tidal5_period0.14Gyr_emx10%_eta1.0d13_P1.0TW_1.5wt%_D5.0km-NH3_Hvar_2
