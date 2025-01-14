@@ -8,4 +8,4 @@ INPUT file: Provides the input file required to run the model utilized in the re
 
 python_CODE: Includes the Python code used to generate the figures presented in the paper.
 
-TM_Code: The source code for thermal evolution.
+TM_CODE: The source code for thermal evolution.
